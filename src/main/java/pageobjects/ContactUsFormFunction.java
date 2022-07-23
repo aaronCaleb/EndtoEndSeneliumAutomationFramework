@@ -17,7 +17,7 @@ public class ContactUsFormFunction extends AbstractComponent {
         super(DriverFactory.getInstance().getDriverThreadLocal(), element);
     }
 
-    By contactFormLink=By.cssSelector("li:nth-of-type(7) > a");
+    By contactFormLink=By.cssSelector("a[href='contactForm.html']");
     By enterFName=By.cssSelector("form#contact_form > input[name='first_name']");
     By enterLName=By.cssSelector("form#contact_form > input[name='last_name']");
     By enterEmail=By.cssSelector("form#contact_form > input[name='email']");
@@ -33,7 +33,9 @@ public class ContactUsFormFunction extends AbstractComponent {
     }
 
     public void clickContactFormLink(Consumer<ContactUsFormFunction> consumer){
-        findElement(contactFormLink).click();
+        new WebDriverWait(DriverFactory.getInstance().getDriverThreadLocal(), Duration.ofSeconds(20))
+                .ignoring(StaleElementReferenceException.class)
+                .until(ExpectedConditions.elementToBeClickable(contactFormLink)).click();
         consumer.accept(this);
 
     }

@@ -16,13 +16,15 @@ public class AccordionPageFunction extends AbstractComponent {
 
     }
 
-    By accordionLink=By.linkText("ACCORDION");
+    By accordionLink=By.cssSelector("[href='accordion\\.html']");
     By accordion1=By.cssSelector(".accordion > div:nth-of-type(1)");
     By accordion2=By.cssSelector(".accordion > div:nth-of-type(3)");
     By accordion3=By.cssSelector(".accordion > div:nth-of-type(5)");
 
     public boolean setAccordions(){
-        findElement(accordionLink).click();
+        new WebDriverWait(DriverFactory.getInstance().getDriverThreadLocal(), Duration.ofSeconds(20))
+                .ignoring(StaleElementReferenceException.class)
+                .until(ExpectedConditions.elementToBeClickable(accordionLink)).click();
         for(int i=0;i<10;++i){
             new WebDriverWait(DriverFactory.getInstance().getDriverThreadLocal(), Duration.ofSeconds(20))
                     .ignoring(StaleElementReferenceException.class)
