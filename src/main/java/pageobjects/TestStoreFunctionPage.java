@@ -2,9 +2,7 @@ package pageobjects;
 
 import abstractcomponents.AbstractComponent;
 import base.DriverFactory;
-import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import teststoreobjects.SignInPage;
@@ -22,16 +20,16 @@ public class TestStoreFunctionPage extends AbstractComponent {
 
 
     public SignInPage clickSignInPage(){
-        new WebDriverWait(DriverFactory.getInstance().getDriverThreadLocal(), Duration.ofSeconds(20))
-                .ignoring(StaleElementReferenceException.class)
-                .until(ExpectedConditions.elementToBeClickable(testStoreLink)).click();
+        WebElement element=findElement(testStoreLink);
+        JavascriptExecutor executor=(JavascriptExecutor) DriverFactory.getInstance().getDriverThreadLocal();
+        executor.executeScript("arguments[0].click();", element);
         return new SignInPage(DriverFactory.getInstance().getDriverThreadLocal(), testStoreTopHeader);
     }
 
     public SignInPageHashMap clickSignInPage2(){
-        new WebDriverWait(DriverFactory.getInstance().getDriverThreadLocal(), Duration.ofSeconds(20))
-                .ignoring(StaleElementReferenceException.class)
-                .until(ExpectedConditions.elementToBeClickable(testStoreLink)).click();
+        WebElement element=findElement(testStoreLink);
+        JavascriptExecutor executor=(JavascriptExecutor) DriverFactory.getInstance().getDriverThreadLocal();
+        executor.executeScript("arguments[0].click();", element);
         return new SignInPageHashMap(DriverFactory.getInstance().getDriverThreadLocal(), testStoreTopHeader);
     }
 }
