@@ -64,7 +64,6 @@ public class ContactUsFormFunction extends AbstractComponent {
     public void clickSubmit(){
         new WebDriverWait(DriverFactory.getInstance().getDriverThreadLocal(), Duration.ofSeconds(20))
                 .ignoring(StaleElementReferenceException.class)
-                .pollingEvery(Duration.ofSeconds(3))
                 .until(ExpectedConditions.elementToBeClickable(submitBtn)).click();
     }
 }
