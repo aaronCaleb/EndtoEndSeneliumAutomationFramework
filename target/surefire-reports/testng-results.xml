@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-23T16:13:01 AEST" name="Parallel Testing Suite" finished-at="2022-07-23T16:14:40 AEST" duration-ms="99351">
+    <groups>
+      <group name="REGRESSION">
+        <method signature="AccordionPageFunctionTest.validateAccordions()[pri:0, instance:testcases.AccordionPageFunctionTest@17bffc17]" name="validateAccordions" class="testcases.AccordionPageFunctionTest"/>
+      </group> <!-- REGRESSION -->
+      <group name="SANITY">
+        <method signature="AccordionPageFunctionTest.validateAccordions()[pri:0, instance:testcases.AccordionPageFunctionTest@17bffc17]" name="validateAccordions" class="testcases.AccordionPageFunctionTest"/>
+      </group> <!-- SANITY -->
+      <group name="SMOKE">
+        <method signature="AccordionPageFunctionTest.validateAccordions()[pri:0, instance:testcases.AccordionPageFunctionTest@17bffc17]" name="validateAccordions" class="testcases.AccordionPageFunctionTest"/>
+      </group> <!-- SMOKE -->
+    </groups>
+    <test started-at="2022-07-23T16:13:01 AEST" name="Standalone Tests" finished-at="2022-07-23T16:14:40 AEST" duration-ms="99351">
+      <class name="testcases.UpLoadPageTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.UpLoadPageTest@16150369]" started-at="2022-07-23T16:14:24 AEST" name="launchBrowser" finished-at="2022-07-23T16:14:31 AEST" duration-ms="6388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateUpLoadPage()[pri:0, instance:testcases.UpLoadPageTest@16150369]" started-at="2022-07-23T16:14:31 AEST" name="validateUpLoadPage" finished-at="2022-07-23T16:14:40 AEST" duration-ms="8926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUpLoadPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.UpLoadPageTest@16150369]" started-at="2022-07-23T16:14:40 AEST" name="tearDown" finished-at="2022-07-23T16:14:40 AEST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.UpLoadPageTest -->
+      <class name="testcases.ContactFormPageTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.ContactFormPageTest@97e93f1]" started-at="2022-07-23T16:13:19 AEST" name="launchBrowser" finished-at="2022-07-23T16:13:29 AEST" duration-ms="9525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateContactUsForm(java.util.HashMap)[pri:0, instance:testcases.ContactFormPageTest@97e93f1]" started-at="2022-07-23T16:13:29 AEST" name="validateContactUsForm" description="Validating Contact Us Form" data-provider="dataProvider2" finished-at="2022-07-23T16:13:32 AEST" duration-ms="3654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{First Name=Nireekshan, Last Name=Sodavaram, Email=n.kumar9@outlook.com, Comments=This is first time using yaml file}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateContactUsForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.ContactFormPageTest@97e93f1]" started-at="2022-07-23T16:13:32 AEST" name="tearDown" finished-at="2022-07-23T16:13:33 AEST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.ContactFormPageTest -->
+      <class name="testcases.AccordionPageFunctionTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.AccordionPageFunctionTest@17bffc17]" started-at="2022-07-23T16:13:01 AEST" name="launchBrowser" finished-at="2022-07-23T16:13:14 AEST" duration-ms="13416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateAccordions()[pri:0, instance:testcases.AccordionPageFunctionTest@17bffc17]" started-at="2022-07-23T16:13:14 AEST" name="validateAccordions" finished-at="2022-07-23T16:13:18 AEST" duration-ms="3923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAccordions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AccordionPageFunctionTest@17bffc17]" started-at="2022-07-23T16:13:18 AEST" name="tearDown" finished-at="2022-07-23T16:13:19 AEST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AccordionPageFunctionTest -->
+      <class name="testcases.SignInTestUsingExcelFile">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:13:34 AEST" name="launchBrowser" finished-at="2022-07-23T16:13:44 AEST" duration-ms="9748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:13:34 AEST" name="launchBrowser" finished-at="2022-07-23T16:13:43 AEST" duration-ms="8741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:13:34 AEST" name="launchBrowser" finished-at="2022-07-23T16:13:43 AEST" duration-ms="8581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateSignInPage(java.lang.String,java.lang.String)[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:13:43 AEST" name="validateSignInPage" description="SignInTest" data-provider="getTestData" finished-at="2022-07-23T16:14:04 AEST" duration-ms="21516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sara91@hotmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Analesenik2023#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignInPage -->
+        <test-method signature="validateSignInPage(java.lang.String,java.lang.String)[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:13:43 AEST" name="validateSignInPage" description="SignInTest" data-provider="getTestData" finished-at="2022-07-23T16:14:02 AEST" duration-ms="18595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n.kumar9@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ilovemymom23#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignInPage -->
+        <test-method signature="validateSignInPage(java.lang.String,java.lang.String)[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:13:44 AEST" name="validateSignInPage" description="SignInTest" data-provider="getTestData" finished-at="2022-07-23T16:14:01 AEST" duration-ms="16663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n.kumar9@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AaronCaleb2021#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignInPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:14:01 AEST" name="tearDown" finished-at="2022-07-23T16:14:01 AEST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:14:02 AEST" name="tearDown" finished-at="2022-07-23T16:14:02 AEST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignInTestUsingExcelFile@5a5a729f]" started-at="2022-07-23T16:14:04 AEST" name="tearDown" finished-at="2022-07-23T16:14:05 AEST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SignInTestUsingExcelFile -->
+      <class name="testcases.SignInTestUsingHashMapDataProvider">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.SignInTestUsingHashMapDataProvider@4b520ea8]" started-at="2022-07-23T16:14:05 AEST" name="launchBrowser" finished-at="2022-07-23T16:14:11 AEST" duration-ms="6496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateSignInPage(java.util.HashMap)[pri:0, instance:testcases.SignInTestUsingHashMapDataProvider@4b520ea8]" started-at="2022-07-23T16:14:11 AEST" name="validateSignInPage" data-provider="testData" finished-at="2022-07-23T16:14:24 AEST" duration-ms="12945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Ilovemymom23#, username=n.kumar9@outlook.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSignInPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SignInTestUsingHashMapDataProvider@4b520ea8]" started-at="2022-07-23T16:14:24 AEST" name="tearDown" finished-at="2022-07-23T16:14:24 AEST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SignInTestUsingHashMapDataProvider -->
+    </test> <!-- Standalone Tests -->
+  </suite> <!-- Parallel Testing Suite -->
+</testng-results>
