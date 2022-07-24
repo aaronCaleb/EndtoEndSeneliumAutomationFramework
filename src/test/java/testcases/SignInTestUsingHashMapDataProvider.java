@@ -27,11 +27,10 @@ public class SignInTestUsingHashMapDataProvider extends TestBase {
         ExtentFactory.getInstance().getExtent().log(Status.INFO, "SignIn Page Function validation Test started");
         MainPage mainPage = new MainPage();
         ExtentFactory.getInstance().getExtent().log(Status.INFO, "MainPage object has been instantiated");
-       mainPage.clickTestStorePage().testStoreClick().clickSignInPage2()
+        mainPage.clickTestStorePage().testStoreClick().clickSignInPage2()
                .signInFunctionHashMap(signInDetails);
         ExtentFactory.getInstance().getExtent().log(Status.INFO, "SignIn Page Function validation Test ended");
         Assert.assertTrue(true);
-
     }
 
     @DataProvider(name = "testData")

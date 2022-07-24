@@ -18,13 +18,12 @@ public class TestBase{
 
     @BeforeMethod
     public void launchBrowser() throws Exception {
-        //String browser= ReadConfigProperties.getPropertyValueByKey("browser");
+        String browser= ReadConfigProperties.getPropertyValueByKey("browser");
         String url= ReadConfigProperties.getPropertyValueByKey("url");
 
-        DriverFactory.getInstance().setDriverThreadLocal(browserFactory.createBrowserInstance("browser"));
+        DriverFactory.getInstance().setDriverThreadLocal(browserFactory.createBrowserInstance(browser));
 
         DriverFactory.getInstance().getDriverThreadLocal().manage().window().maximize();
-
 
         DriverFactory.getInstance().getDriverThreadLocal().get(url);
 

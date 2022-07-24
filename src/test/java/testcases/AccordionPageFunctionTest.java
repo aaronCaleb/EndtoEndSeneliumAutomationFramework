@@ -22,7 +22,6 @@ import utility.TestNGListeners;
 
 public class AccordionPageFunctionTest extends TestBase {
 
-
     By sideBar= By.cssSelector("div#sidebar");
 
     @Framework(author={AuthorType.NIREEKSHAN},
