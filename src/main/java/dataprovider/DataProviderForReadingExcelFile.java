@@ -17,7 +17,7 @@ public class DataProviderForReadingExcelFile {
         int totalRows = excelReader.getRowCount("test1");
         int totalCells = excelReader.getCellCount("test1", 1);
 
-        String testData[][] = new String[totalRows][totalCells];
+        String[][] testData = new String[totalRows][totalCells];
 
         for (int rowNum = 1; rowNum <= totalRows; rowNum++) { //1
             for (int colNum = 0; colNum < totalCells; colNum++) { //0

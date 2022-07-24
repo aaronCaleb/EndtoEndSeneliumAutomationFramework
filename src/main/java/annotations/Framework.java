@@ -12,9 +12,9 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface Framework {
     // This is not a method
-    public AuthorType[] author();
+    AuthorType[] author();
 
     // public String[] category();
-    public CategoryType[] category();
+    CategoryType[] category();
 
 }

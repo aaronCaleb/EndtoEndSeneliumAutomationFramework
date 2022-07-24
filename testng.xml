@@ -1,16 +1,46 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name = "Parallel Testing Suite" thread-count="5">
+<suite name = "Parallel Testing Suite" parallel="classes" thread-count="5">
     <listeners>
         <listener class-name="utility.TestNGListeners">
         </listener>
     </listeners>
-    <test name = "Standalone Tests">
+    <test name = "EndToEndAutomationAccordionPage">
+        <parameter name="browser" value="remote-chrome"/>
         <classes>
             <class name = "testcases.AccordionPageFunctionTest" />
-            <class name = "testcases.ContactFormPageTest" />
-            <class name = "testcases.SignInTestUsingExcelFile" />
-            <class name = "testcases.SignInTestUsingHashMapDataProvider" />
-            <class name = "testcases.UpLoadPageTest" />
         </classes>
     </test>
+
+    <test name="EndToEndAutomationContactFormPage">
+        <parameter name="browser" value="remote-firefox"/>
+        <classes>
+            <class name="testcases.ContactFormPageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="EndToEndAutomationSignInPageExcel">
+    <parameter name="browser" value="remote-edge"/>
+    <classes>
+        <class name="testcases.SignInTestUsingExcelFile">
+        </class>
+    </classes>
+    </test>
+
+    <test name="EndToEndAutomationSignInPageHashMap">
+        <parameter name="browser" value="remote-firefox"/>
+        <classes>
+            <class name="testcases.SignInTestUsingHashMapDataProvider">
+            </class>
+        </classes>
+    </test>
+
+    <test name="EndToEndAutomationUploadPage">
+        <parameter name="browser" value="remote-chrome"/>
+        <classes>
+            <class name="testcases.UpLoadPageTest">
+            </class>
+        </classes>
+    </test>
+
 </suite>

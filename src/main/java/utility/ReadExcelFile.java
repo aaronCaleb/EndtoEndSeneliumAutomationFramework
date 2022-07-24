@@ -33,7 +33,7 @@ public class ReadExcelFile {
      */
 
     public ReadExcelFile (String path) {
-        this.excelPath = path;
+        excelPath = path;
         try{
             fileInputStream = new FileInputStream(excelPath);
             xssfWorkbook = new XSSFWorkbook(fileInputStream);

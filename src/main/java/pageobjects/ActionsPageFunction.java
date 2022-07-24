@@ -33,7 +33,7 @@ public class ActionsPageFunction extends AbstractComponent {
         new WebDriverWait(DriverFactory.getInstance().getDriverThreadLocal(), Duration.ofSeconds(20))
                 .ignoring(StaleElementReferenceException.class)
                 .until(ExpectedConditions.elementToBeClickable(fromElement));
-        Action dragAndDrop= (Action) actions.clickAndHold((WebElement) fromElement)
+        Action dragAndDrop= actions.clickAndHold((WebElement) fromElement)
                 .moveToElement((WebElement) toElement)
                 .release((WebElement) toElement)
                 .build();

@@ -69,7 +69,7 @@ abstract public class AbstractComponent {
     public void fluentWait(WebDriver driver,By element, int timeOut) {
         Wait<WebDriver> wait = null;
         try {
-            wait = new FluentWait<WebDriver>((WebDriver) driver)
+            wait = new FluentWait<WebDriver>(driver)
                     .withTimeout(Duration.ofSeconds(20))
                     .pollingEvery(Duration.ofSeconds(2))
                     .ignoring(Exception.class);

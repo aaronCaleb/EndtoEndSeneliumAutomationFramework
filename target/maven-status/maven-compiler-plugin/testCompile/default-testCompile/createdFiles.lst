@@ -1,7 +1,0 @@
-testcases\ActionsPageFunctionTest.class
-testcases\UpLoadPageTest.class
-testcases\ContactFormPageTest.class
-testcases\AccordionPageFunctionTest.class
-testcases\SignInTestUsingHashMapDataProvider.class
-testcases\SignInTestUsingJSONDataProvider.class
-testcases\SignInTestUsingExcelFile.class
